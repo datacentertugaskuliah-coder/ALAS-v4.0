@@ -1,32 +1,25 @@
-# ALAS v4.0 — Academic Literature Analysis System
+# ALAS v5.0 — Academic Literature Analysis System
 
 Dashboard akademik berbasis AI untuk mendukung penelitian ilmiah.
 
-## Fitur Utama
+## Isi
 
-- **12 Modul** penelitian lengkap (Modul 0–10)
-- **Core Layer v4.0** — 13 seksi (A–M), Mode TAK, PUBEI
-- **Seksi L** — Mesin Parameter Konteks (Bidang/Level/Target)
-- **Seksi M** — Protokol Analisis Statistik Multivariat
-- **Modul 10** — 10 Rekomendasi Judul (Statistik Multivariat)
-- **Anti-halusinasi** aktif + 9 gerbang kualitas
-- Kompatibel: ChatGPT, Claude, Gemini, Grok, Copilot
+- `app.py` — Entry point Streamlit
+- `dashboard.html` — ALAS v5.0 dashboard (266 KB)
+- `requirements.txt` — Dependensi Python
+- `.streamlit/config.toml` — Konfigurasi tema
 
-## Cara Penggunaan
+## Deploy ke Streamlit Cloud
 
-1. Pilih konteks penelitian (Bidang / Level / Target) di Beranda
-2. Navigasi ke modul yang dibutuhkan via sidebar kiri
-3. Klik "Copy Prompt" → paste ke AI manapun
-4. Ikuti instruksi di setiap modul
+1. Upload folder ini ke GitHub (repo private disarankan)
+2. Buka share.streamlit.io → New app
+3. Pilih repo → branch `main` → Main file: `app.py`
+4. Deploy
 
-## Deploy
+## Fitur ALAS v5.0
 
-```
-streamlit run app.py
-```
-
-## Stack
-
-- Python + Streamlit (wrapper)
-- HTML/CSS/JS (dashboard ALAS)
-- Tidak memerlukan database atau API key
+- Core Layer 15 Seksi (A–O) — Profesional & Ilmiah
+- 12 Modul (M0–M10) lengkap
+- Responsif: smartphone, tablet, laptop
+- PUBEI, Anti-Halusinasi, 9 Gerbang Kualitas
+- Modul 10: Statistik Multivariat (MLR/Moderasi/Mediasi/SEM)
