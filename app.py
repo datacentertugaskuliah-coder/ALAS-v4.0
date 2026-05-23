@@ -13,7 +13,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="collapsed",
     menu_items={
-        "About": "ALAS v5.0 · 15 Seksi (A–O) · 12 Modul\n© 2024–2025 Alhumaira Store\nobrolanpintar1987@gmail.com"
+        "About": "ALAS v5.0 · 15 Seksi (A–O) · 12 Modul\n© 2026 Alhumaira Store\nobrolanpintar1987@gmail.com"
     }
 )
 
