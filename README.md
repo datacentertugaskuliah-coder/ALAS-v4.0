@@ -1,25 +1,28 @@
 # ALAS v5.0 — Academic Literature Analysis System
+© 2024–2025 **Alhumaira Store** · obrolanpintar1987@gmail.com
 
-Dashboard akademik berbasis AI untuk mendukung penelitian ilmiah.
+## Cara Deploy ke Streamlit Cloud
 
-## Isi
+1. **Extract ZIP** → folder `alas_deploy`
+2. **Buat repo GitHub** (private) → `alas-dashboard`
+3. **GitHub Desktop** → Clone repo → salin semua isi folder ke dalamnya
+4. **Commit & Push** → pesan: `Add ALAS v5.0`
+5. **share.streamlit.io** → New app → pilih repo → `app.py` → Deploy
 
-- `app.py` — Entry point Streamlit
-- `dashboard.html` — ALAS v5.0 dashboard (266 KB)
-- `requirements.txt` — Dependensi Python
-- `.streamlit/config.toml` — Konfigurasi tema
+## Isi Paket
 
-## Deploy ke Streamlit Cloud
-
-1. Upload folder ini ke GitHub (repo private disarankan)
-2. Buka share.streamlit.io → New app
-3. Pilih repo → branch `main` → Main file: `app.py`
-4. Deploy
+| File | Keterangan |
+|---|---|
+| `app.py` | Entry point Streamlit |
+| `dashboard.html` | ALAS v5.0 (276 KB) |
+| `requirements.txt` | `streamlit>=1.32.0` |
+| `.streamlit/config.toml` | Tema & server config |
+| `.gitignore` | Exclude secrets & cache |
 
 ## Fitur ALAS v5.0
 
 - Core Layer 15 Seksi (A–O) — Profesional & Ilmiah
-- 12 Modul (M0–M10) lengkap
-- Responsif: smartphone, tablet, laptop
-- PUBEI, Anti-Halusinasi, 9 Gerbang Kualitas
-- Modul 10: Statistik Multivariat (MLR/Moderasi/Mediasi/SEM)
+- 12 Modul lengkap (M0–M10)
+- Desain premium, CB-safe, responsif (smartphone/tablet/laptop)
+- Footer copyright Alhumaira Store
+- Anti-Halusinasi · PUBEI · OBF Engine v3.0
