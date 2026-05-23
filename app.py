@@ -1,7 +1,3 @@
-"""
-ALAS v5.0 — Academic Literature Analysis System
-© 2024–2025 Alhumaira Store | obrolanpintar1987@gmail.com
-"""
 import streamlit as st
 import streamlit.components.v1 as components
 from pathlib import Path
@@ -11,10 +7,11 @@ st.set_page_config(
     page_icon="📚",
     layout="wide",
     initial_sidebar_state="collapsed",
-    menu_items={"About":"ALAS v5.0 · © Alhumaira Store · obrolanpintar1987@gmail.com"}
+    menu_items={
+        "About": "ALAS v5.0 · 15 Seksi (A-O) · 12 Modul\n© 2025 Alhumaira Store\nobrolanpintar1987@gmail.com"
+    }
 )
 
-# Hapus semua Streamlit UI
 st.markdown("""<style>
 #MainMenu,header,footer,[data-testid="stHeader"],
 [data-testid="stToolbar"],[data-testid="stDecoration"],
@@ -27,11 +24,11 @@ iframe{width:100%!important;border:none!important;display:block!important}
 
 html_path = Path(__file__).parent / "dashboard.html"
 if not html_path.exists():
-    st.error("❌ dashboard.html tidak ditemukan.")
+    st.error("dashboard.html tidak ditemukan.")
     st.stop()
 
-html = html_path.read_text(encoding="utf-8")
-
-# Render dengan height besar + scrolling=True
-# HTML sudah punya body scroll native + topbar fixed
-components.html(html, height=5000, scrolling=True)
+components.html(
+    html_path.read_text(encoding="utf-8"),
+    height=5000,
+    scrolling=True
+)
